@@ -8,37 +8,37 @@ import styles from "./cats.module.scss";
 const cats = [
   {
     title: "مردانه",
-    image: "../../../cats/man.png",
+    image: `${process.env.PUBLIC_URL}/cats/man.png`,
     description: "مشاهده محصولات",
     link: "/search?title=مردانه",
   },
   {
     title: "زنانه",
-    image: "../../../cats/womean.png",
+    image: `${process.env.PUBLIC_URL}/cats/womean.png`,
     description: "مشاهده محصولات",
     link: "/search?title=زنانه",
   },
   {
     title: "بچگانه",
-    image: "../../../cats/child.png",
+    image: `${process.env.PUBLIC_URL}/cats/child.png`,
     description: "مشاهده محصولات",
     link: "/search?title=بچگانه",
   },
   {
     title: "طبی",
-    image: "../../../cats/tebi.png",
+    image: `${process.env.PUBLIC_URL}/cats/tebi.png`,
     description: "مشاهده محصولات",
     link: "/search?title=طبی",
   },
   {
     title: "آفتابی",
-    image: "../../../cats/Aftabi.png",
+    image: `${process.env.PUBLIC_URL}/cats/Aftabi.png`,
     description: "مشاهده محصولات",
     link: "/search?title=آفتابی",
   },
   {
     title: "ورزشی",
-    image: "../../../cats/varzeshi.png",
+    image: `${process.env.PUBLIC_URL}/cats/varzeshi.png`,
     description: "مشاهده محصولات",
     link: "/search?title=ورزشی",
   },
