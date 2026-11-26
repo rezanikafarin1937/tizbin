@@ -5,6 +5,7 @@
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--color-background);
+  font-weight: bold;
 }
 
 @media (max-width: 425px) {

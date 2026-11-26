@@ -88,7 +88,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="مشاهده نمونه‌کارهای دیگر توسعه‌دهنده تیزبین"
-                style={{ fontSize: "11px" ,fontWeight : "400"}}
+                style={{ fontSize: "11px" ,fontWeight : "400",color : "var(--color-primary-dark)"}}
               >
                 مشاهده سایر نمونه‌کارهای توسعه‌دهنده
               </a>
@@ -106,7 +106,7 @@ const Footer = () => {
               </li>
 
               <li>
-                <Link to="/products">محصولات</Link>
+                <Link to="/store">محصولات</Link>
                 <FaChevronLeft aria-hidden="true" />
               </li>
 
@@ -126,7 +126,7 @@ const Footer = () => {
               </li>
 
               <li>
-                <Link to="/contact">تماس با ما</Link>
+                <Link to="/contact-us">تماس با ما</Link>
                 <FaChevronLeft aria-hidden="true" />
               </li>
             </ul>
@@ -138,27 +138,27 @@ const Footer = () => {
 
             <ul>
               <li>
-                <Link to="/products/glasses">عینک طبی</Link>
+                <Link to="/search?title=طبی">عینک طبی</Link>
                 <FaChevronLeft aria-hidden="true" />
               </li>
 
               <li>
-                <Link to="/products/sunglasses">عینک آفتابی</Link>
+                <Link to="/search?title=آفتابی">عینک آفتابی</Link>
                 <FaChevronLeft aria-hidden="true" />
               </li>
 
               <li>
-                <Link to="/products/sport">عینک ورزشی</Link>
+                <Link to="/search?title=ورزشی">عینک ورزشی</Link>
                 <FaChevronLeft aria-hidden="true" />
               </li>
 
               <li>
-                <Link to="/products/kids">عینک بچگانه</Link>
+                <Link to="/search?title=بچگانه">عینک بچگانه</Link>
                 <FaChevronLeft aria-hidden="true" />
               </li>
 
               <li>
-                <Link to="/products/accessories">لوازم جانبی</Link>
+                <Link to="/accessories">لوازم جانبی</Link>
                 <FaChevronLeft aria-hidden="true" />
               </li>
             </ul>

@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Card from "../../components/card/Card";
@@ -15,10 +14,7 @@ const Search = () => {
   const page = Math.max(1, Number(searchParams.get("page")) || 1);
 
   // تعداد محصولات در هر صفحه
-  const per_page = Math.max(
-    1,
-    Number(searchParams.get("per_page")) || 10
-  );
+  const per_page = Math.max(1, Number(searchParams.get("per_page")) || 10);
 
   const [products, setProducts] = useState([]);
   const [pagination, setPagination] = useState({});
@@ -26,6 +22,12 @@ const Search = () => {
 
   useEffect(() => {
     let isMounted = true;
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
 
     const getProducts = async () => {
       if (!title.trim()) {
@@ -39,7 +41,7 @@ const Search = () => {
         setLoading(true);
 
         const response = await fetch(
-          `${process.env.PUBLIC_URL}/database/products.json`
+          `${process.env.PUBLIC_URL}/database/products.json`,
         );
 
         if (!response.ok) {
@@ -50,7 +52,7 @@ const Search = () => {
 
         // جستجو بر اساس عنوان
         const filteredProducts = allProducts.filter((product) =>
-          product.title.toLowerCase().includes(title.trim().toLowerCase())
+          product.title.toLowerCase().includes(title.trim().toLowerCase()),
         );
 
         // محاسبه صفحه‌بندی
@@ -111,10 +113,7 @@ const Search = () => {
         </div>
 
         <div className={styles.products__sunglass}>
-          <img
-            src={sunglass}
-            alt="فروشگاه اینترنتی فروش عینک طبی و آفتابی"
-          />
+          <img src={sunglass} alt="فروشگاه اینترنتی فروش عینک طبی و آفتابی" />
         </div>
       </div>
 
@@ -139,19 +138,13 @@ const Search = () => {
       </div>
 
       {loading ? (
-        <div className={styles.loading}>
-          در حال جستجو...
-        </div>
+        <div className={styles.loading}>در حال جستجو...</div>
       ) : products.length === 0 ? (
         <p>محصولی پیدا نشد.</p>
       ) : (
         <div className={styles.products}>
           {products.map((product) => (
-            <Card
-              key={product.id}
-              {...product}
-              state={false}
-            />
+            <Card key={product.id} {...product} state={false} />
           ))}
         </div>
       )}

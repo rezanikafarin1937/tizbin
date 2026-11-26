@@ -52,8 +52,8 @@
 
 @media (max-width: 425px) {
   .benefitCard__title {
-    font-size: .5rem;
-    font-weight: 300px;
+    font-size: .55rem;
+    font-weight: bold;
   }
 }
 
