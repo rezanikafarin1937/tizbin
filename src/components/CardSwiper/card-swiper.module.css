@@ -55,8 +55,8 @@
 
 .cardText {
   color: var(--color-text);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: .8rem;
+  font-weight: 500;
   padding: var(--padding);
   white-space: nowrap;
   overflow: hidden;

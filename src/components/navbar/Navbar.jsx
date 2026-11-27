@@ -6,35 +6,32 @@ function Navbar() {
   const location = useLocation();
 
   return (
-    <div className={styles.parent}>
-      <nav
-        className={styles.parent__nav}
-        aria-label="منوی اصلی سایت"
-      >
-        {routes.map((route) => (
-          <div key={route.path}>
-            <Link
-              to={route.path}
+    <ul className={styles.parent}>
+      {routes.map(
+        (route) =>
+          route.title && (
+            <li
+              key={route.path}
               className={
-                location.pathname === route.path
-                  ? styles.parent__navActive
-                  : ""
-              }
-              aria-current={
-                location.pathname === route.path ? "page" : undefined
+                location.pathname === route.path ? styles.parent__navLine : ""
               }
             >
-              {route.title}
-            </Link>
-
-            <span className="margin-x"></span>
-            <span className="margin-x"></span>
-          </div>
-        ))}
-      </nav>
-    </div>
+              <Link
+                className={
+                  location.pathname === route.path ? styles.parent__navActive : ""
+                }
+                to={route.path}
+                aria-current={
+                  location.pathname === route.path ? "page" : undefined
+                }
+              >
+                {route.title}
+              </Link>
+            </li>
+          ),
+      )}
+    </ul>
   );
 }
 
 export default Navbar;
-

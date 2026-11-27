@@ -8,6 +8,7 @@ import ContactUs from "../pages/contact-us/ContactUs";
 import Category from "../pages/category/Category";
 import EyeHealthArticle from "../pages/blog/EyeHealthArticle";
 import Accessories from "../pages/accessories/Accessories";
+import Guide from "../pages/guide/Guide";
 
 export const routes = [
   {
@@ -39,23 +40,33 @@ export const routes = [
   {
     path: "/login",
     element: <Login />,
+    title : null
   },
   {
     path: "/search",
     element: <Search />,
+    title : null
   },
   {
     path: "/product-details/:id",
     element: <ProductDetails />,
+    title : null
   },
   {
     path: "/blog",
     element: <EyeHealthArticle />,
+    title : null
   },
   {
     path: "/accessories",
     element: <Accessories />,
-    // title: "اکسسوری",
+    title : null
+  },
+  {
+    path: "/guide",
+    element: <Guide />,
+    title : null
+  
   },
 ];
 
@@ -76,7 +87,7 @@ export const routesMobile = [
     key: "categories",
     path: "/category",
     element: <Category />,
-    title: "دسته بندی ها",
+    title: "دسته بندی",
   },
   {
     key: "about",
@@ -88,6 +99,6 @@ export const routesMobile = [
     key: "contact",
     path: "/contact-us",
     element: <ContactUs />,
-    title: "تماس با ما",
+    title: "تماس",
   },
 ];
