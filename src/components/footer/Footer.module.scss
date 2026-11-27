@@ -1,11 +1,23 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   flex-wrap: wrap;
   background-color: var(--color-background);
+  color: var(--color-text-secondary);
 
-  p{
+  a {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  p {
     line-height: 1.5;
   }
 
@@ -61,7 +73,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    margin: 1rem 0 .5rem 0;
+    margin: 1rem 0 0.5rem 0;
   }
   &__social {
     width: 50px;

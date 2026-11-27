@@ -23,7 +23,7 @@
 
 @media (max-width: 768px) {
   .store__cards {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 

@@ -18,7 +18,7 @@
     flex-wrap: wrap;
 
     @media (max-width: 768px) {
-      justify-content: end;
+      justify-content: flex-end;
     }
   }
 
