@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./card.module.scss";
 import Star from "../../utils/star/Star";
 
-const Card = ({ id, title, price, discount, images, state = true }) => {
+const Card = ({ id, title, price, discount, images, state = false }) => {
   const endPrice = (price) => {
     const result = price * (discount / 100);
     return price - result;

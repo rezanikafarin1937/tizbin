@@ -144,7 +144,7 @@ const Search = () => {
       ) : (
         <div className={styles.products}>
           {products.map((product) => (
-            <Card key={product.id} {...product} state={false} />
+            <Card key={product.id} {...product} state={true} />
           ))}
         </div>
       )}
