@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tizbin/static/css/main.fe07c607.css",
-    "main.js": "/tizbin/static/js/main.1d248099.js",
+    "main.css": "/tizbin/static/css/main.3a52012b.css",
+    "main.js": "/tizbin/static/js/main.3ace0c1a.js",
     "static/media/AboutMe.png": "/tizbin/static/media/AboutMe.68c7ae907e656d9934cd.png",
     "static/media/AboutFoot.png": "/tizbin/static/media/AboutFoot.11501408a73cf796726d.png",
     "static/media/sunglass.png": "/tizbin/static/media/sunglass.bf9aceec9efde4c9de17.png",
@@ -18,11 +18,11 @@
     "static/media/Vazirmatn-Black.woff2": "/tizbin/static/media/Vazirmatn-Black.aa14df29ec50d5e9c2c9.woff2",
     "static/media/ContactUs.jfif": "/tizbin/static/media/ContactUs.9da1d62be4d427db324e.jfif",
     "index.html": "/tizbin/index.html",
-    "main.fe07c607.css.map": "/tizbin/static/css/main.fe07c607.css.map",
-    "main.1d248099.js.map": "/tizbin/static/js/main.1d248099.js.map"
+    "main.3a52012b.css.map": "/tizbin/static/css/main.3a52012b.css.map",
+    "main.3ace0c1a.js.map": "/tizbin/static/js/main.3ace0c1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe07c607.css",
-    "static/js/main.1d248099.js"
+    "static/css/main.3a52012b.css",
+    "static/js/main.3ace0c1a.js"
   ]
 }
