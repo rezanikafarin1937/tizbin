@@ -28,27 +28,6 @@
     }
   }
 
-  &__details {
-    @media (max-width: 767px) {
-      // display: none;
-    }
-  }
-
-  &__qtyReport {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: var(--color-primary-dark);
-    color: var(--color-white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 1rem;
-
-    @media (max-width: 321px) {
-      display: none;
-    }
-  }
 
   &__image {
     background-color: var(--color-background);

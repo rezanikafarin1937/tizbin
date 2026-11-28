@@ -1,4 +1,3 @@
-
 import { useCartContext } from "../../context/CartContext";
 import Button from "../button/Button";
 import CloseIcon from "../../icons/close-icon/CloseIcon";
@@ -17,9 +16,7 @@ const CartItem = ({ id, qty, price, discount, title, description, images }) => {
 
     return (
       <>
-        <data value={totalPrice}>
-          {totalPrice.toLocaleString("fa-IR")}
-        </data>
+        <data value={totalPrice}>{totalPrice.toLocaleString("fa-IR")}</data>
         <span> تومان </span>
       </>
     );
@@ -31,11 +28,15 @@ const CartItem = ({ id, qty, price, discount, title, description, images }) => {
         <article>
           <h3 className="title-item">{title}</h3>
 
-          <div className={styles.cart__details}>
+          <div>
+            <div>
+              <span>تعداد : </span>
+              <span>{qty.toLocaleString("fa-IR")}</span>
+              <span> عدد</span>
+            </div>
             <div>
               <span>قیمت : </span>
-              <del>{price?.toLocaleString("fa-IR")}</del>{" "}
-              <span>تومان</span>
+              <del>{price?.toLocaleString("fa-IR")}</del> <span>تومان</span>
             </div>
 
             <div>
@@ -113,10 +114,6 @@ const CartItem = ({ id, qty, price, discount, title, description, images }) => {
     <section className={styles.cart}>
       <div className={styles.cart__right}>
         {image()}
-
-        <span className={styles.cart__qtyReport}>
-          {qty.toLocaleString("fa-IR")}
-        </span>
 
         <div className={styles.cart__info}>{report()}</div>
       </div>
